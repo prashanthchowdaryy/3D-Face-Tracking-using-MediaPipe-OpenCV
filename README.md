@@ -1,130 +1,104 @@
-Real-Time 3D Face Tracking using MediaPipe & OpenCV
-📌 Overview
+# Real-Time 3D Face Tracking (MediaPipe + OpenCV)
 
-This project implements real-time 3D face tracking using MediaPipe Face Mesh and OpenCV in Python.
+This project performs real-time 3D face tracking using MediaPipe Face Mesh and OpenCV.
+It detects facial landmarks and estimates depth to create a 3D face representation.
 
-The system detects 468 facial landmarks and estimates depth (Z-axis) to create a 3D representation of the face in real time.
+---
 
-This project demonstrates practical applications of 3D computer vision and facial geometry modeling.
+## Features
 
-🚀 Features
+* Real-time face detection
+* 468 facial landmarks
+* Depth (Z-axis) estimation
+* Face mesh rendering
+* Webcam integration
+* Fast processing
 
-✅ Real-time face detection
+---
 
-✅ 468 3D facial landmark detection
+## Tech Stack
 
-✅ Depth (Z-axis) estimation
+* Python
+* OpenCV
+* MediaPipe
+* NumPy
 
-✅ Face mesh rendering
+---
 
-✅ Live webcam integration
+## Project Structure
 
-✅ High-speed processing
+* face_3d.py
+* requirements.txt
+* README.md
+* screenshots/
 
-🛠️ Tech Stack
+---
 
-Python
+## Installation
 
-OpenCV
+Clone the repository:
 
-MediaPipe (Face Mesh)
-
-NumPy
-
-📂 Project Structure
-3d-face-tracking/
-│
-├── face_3d.py
-├── requirements.txt
-├── README.md
-└── screenshots/
-⚙️ Installation
-1️⃣ Clone the Repository
 git clone https://github.com/your-username/3d-face-tracking.git
+
+Go to the folder:
+
 cd 3d-face-tracking
-2️⃣ Install Dependencies
+
+Install dependencies:
+
 pip install -r requirements.txt
 
 Or install manually:
 
 pip install opencv-python mediapipe numpy
-▶️ How to Run
+
+---
+
+## Usage
+
+Run the script:
+
 python face_3d.py
 
-Webcam starts
+* Webcam will start
+* Face mesh will appear
+* Landmarks track face in real time
+* Press **Q** to exit
 
-3D face mesh appears
+---
 
-Landmarks track facial movement in real time
+## How It Works
 
-Press Q to exit
+* Webcam captures frames
+* MediaPipe detects facial landmarks
+* Each point has (x, y, z) coordinates
+* Z value gives depth
+* Mesh is drawn on the face
+* Updates happen in real time
 
-🧠 How It Works
+---
 
-Webcam captures live frames
+## Applications
 
-MediaPipe Face Mesh detects 468 landmarks
+* AR filters
+* Face animation
+* Head pose tracking
+* Human-computer interaction
 
-Each landmark includes (x, y, z) coordinates
+---
 
-Z-value provides depth estimation
+## Future Improvements
 
-Face mesh is drawn over the face
+* Head pose estimation
+* Eye blink detection
+* Expression recognition
+* AR overlays
 
-Real-time updates create 3D tracking effect
+---
 
-📸 Demo
+## Learning
 
-(Add screenshots or GIF here)
-
-Example Output:
-
-Full 3D facial mesh overlay
-
-Landmark visualization
-
-Real-time face movement tracking
-
-📈 Applications
-
-🎮 AR Filters
-
-🕶️ Virtual Try-On Systems
-
-😎 Face Animation
-
-🧠 Emotion Recognition
-
-🎥 Head Pose Estimation
-
-🤖 Human-Computer Interaction
-
-🔮 Future Improvements
-
-Head pose estimation (yaw, pitch, roll)
-
-Eye blink detection
-
-Facial expression classification
-
-AR glasses overlay
-
-3D face model export (.obj / .glb)
-
-📚 Learning Outcomes
-
-3D landmark geometry
-
-Depth estimation concepts
-
-Real-time face tracking pipeline
-
-MediaPipe ML model usage
-
-Facial coordinate mapping
-
-👨‍💻 Author
-
-Prashanth
-BCA Student | Data Science & Computer Vision Enthusiast
-Building intelligent vision systems
+* 3D landmark basics
+* Depth estimation
+* Real-time tracking
+* MediaPipe usage
